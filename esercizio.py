@@ -31,8 +31,7 @@ if 20000 < reddito_imp <= 35000:
     reddito_imp = 20000
     
 if 10000 < reddito_imp <= 20000:
-    print(f"Imposta: {(reddito_imp - 10000) * aliquota12} euro.")
     imposta += (reddito_imp - 10000) * aliquota12
+    print(f"Imposta: {(reddito_imp - 10000) * aliquota12} euro.")
     
-
 print(f"Sul tuo reddito verranno detratte {imposta} euro di imposta.")
