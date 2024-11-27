@@ -12,26 +12,27 @@ aliquota60 = 0.60
 
 if reddito_imp > 100000:
     imposta += (reddito_imp - 100000) * aliquota60
+    print(f"Imposta: {(reddito_imp - 100000) * aliquota60} euro.")
     reddito_imp = 100000
-    print(f"Imposta: {imposta} euro.")
     
 if 60000 < reddito_imp <= 100000:
     imposta += (reddito_imp - 60000) * aliquota48
+    print(f"Imposta: {(reddito_imp - 60000) * aliquota48} euro.")
     reddito_imp = 60000 
-    print(f"Imposta: {imposta} euro.")
     
 if 35000 < reddito_imp <= 60000:
     imposta += (reddito_imp - 35000) * aliquota27
+    print(f"Imposta: {(reddito_imp - 35000) * aliquota27} euro.")
     reddito_imp = 35000
-    print(f"Imposta: {imposta} euro.")
     
 if 20000 < reddito_imp <= 35000:
     imposta += (reddito_imp - 20000) * aliquota18
+    print(f"Imposta: {(reddito_imp - 20000) * aliquota18} euro.")
     reddito_imp = 20000
-    print(f"Imposta: {imposta} euro.")
     
 if 10000 < reddito_imp <= 20000:
+    print(f"Imposta: {(reddito_imp - 10000) * aliquota12} euro.")
     imposta += (reddito_imp - 10000) * aliquota12
-    print(f"Imposta: {imposta} euro.")
+    
 
 print(f"Sul tuo reddito verranno detratte {imposta} euro di imposta.")
